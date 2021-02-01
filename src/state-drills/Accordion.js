@@ -1,5 +1,5 @@
 import React from 'react';
-/*testing some shit*/ 
+
 class Accordion extends React.Component {
     static defaultProps = {
          sections: [] 
