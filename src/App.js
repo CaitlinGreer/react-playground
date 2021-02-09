@@ -1,27 +1,15 @@
-import React from "react";
-import Accordion from './state-drills/Accordion';
+import React, { Component } from 'react';
 
-// array of objects each with a name and content
-const sections = [
-  {
-    title: 'Section 1',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-  },
-  {
-    title: 'Section 2',
-    content: 'Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!',
-  },
-  {
-    title: 'Section 3',
-    content: 'Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?',
-  },
-]
 
-class App extends React.Component {
+import DemonymApp from './demonymapp/demonymApp';
+
+class App extends Component {
   render() {
-    return <div>
-      <Accordion sections={sections} />
-    </div>
+    return (
+      <div className="App">
+        <DemonymApp/>
+      </div>
+    );
   }
 }
 
